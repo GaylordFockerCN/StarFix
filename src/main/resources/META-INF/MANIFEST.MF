@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: starmod
+Specification-Vendor: starmodsareus
+Specification-Version: 1
+Implementation-Title: star-new
+Implementation-Version: 1.18.2-V2.0.0
+Implementation-Vendor: starmodsareus
+Implementation-Timestamp: 2024-10-07T01:22:12+0800
+MixinConfigs: star.mixins.json
+
