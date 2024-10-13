@@ -21,7 +21,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
 
-version = '2.0.4'
+version = '2.0.5'
 group = 'net.p1nero.wk' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'StarFix-1.18.2'
 
