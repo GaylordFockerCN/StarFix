@@ -185,7 +185,8 @@ public abstract class AdvancedCustomHumanoidMobPatchMixin<T extends PathfinderMo
                     EpicFightDamageSource efDamageSource = (EpicFightDamageSource)damageSource;
                     impact = amount / 4.0F * (1.0F + efDamageSource.getImpact() / 2.0F);
                     if (efDamageSource.hasTag(SourceTags.GUARD_PUNCTURE)) {
-                        impact = Float.MAX_VALUE;
+//                        impact = Float.MAX_VALUE;
+                        return new AttackResult(ResultType.SUCCESS, amount);
                     }
                 } else {
                     impact = amount / 3.0F;
