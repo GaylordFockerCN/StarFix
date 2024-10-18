@@ -117,7 +117,8 @@ public class ActiveGuardMixin extends GuardSkill {
             return new StaticAnimation[]{Animations.LONGSWORD_GUARD_ACTIVE_HIT1, Animations.LONGSWORD_GUARD_ACTIVE_HIT2};
         }).addAdvancedGuardMotion(StarWeaponCategory.DRAGONSLAYER, (itemCap, playerpatch) -> {
             return new StaticAnimation[]{Animations.LONGSWORD_GUARD_ACTIVE_HIT1, Animations.LONGSWORD_GUARD_ACTIVE_HIT2};
-        }).addAdvancedGuardMotion(StarWeaponCategory.YAMATO, (itemCap, playerpatch) -> {
+        }).addGuardMotion(StarWeaponCategory.YAMATO, (item, player) -> StarAnimations.YAMATO_GUARD_HIT)
+                .addAdvancedGuardMotion(StarWeaponCategory.YAMATO, (itemCap, playerpatch) -> {
             return new StaticAnimation[]{StarAnimations.YAMATO_ACTIVE_GUARD_HIT, StarAnimations.YAMATO_ACTIVE_GUARD_HIT2};
         });
     }

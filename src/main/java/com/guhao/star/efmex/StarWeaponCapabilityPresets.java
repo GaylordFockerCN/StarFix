@@ -115,11 +115,25 @@ public class StarWeaponCapabilityPresets {
         return builder;
     };
     public static final Function<Item, CapabilityItem.Builder> YAMATO = (item) -> {
-        WeaponCapability.Builder builder = WeaponCapability.builder().category((WeaponCategory)YamatoColliderPreset.YAMATO).styleProvider((playerpatch) -> {
-            return Styles.TWO_HAND;
-        }).collider(YamatoColliderPreset.YAMATO).swingSound(EpicFightSounds.BLADE_HIT).hitSound(EpicFightSounds.BLADE_HIT).canBePlacedOffhand(false).newStyleCombo(Styles.TWO_HAND, new StaticAnimation[]{StarAnimations.YAMATO_AUTO1, StarAnimations.YAMATO_AUTO2, StarAnimations.YAMATO_AUTO3, StarAnimations.YAMATO_AUTO4, StarAnimations.YAMATO_DASH, StarAnimations.YAMATO_AIRSLASH}).innateSkill(Styles.TWO_HAND, (itemstack) -> {
-            return StarSkill.LION_CLAW;
-        }).livingMotionModifier(Styles.TWO_HAND, LivingMotions.IDLE, StarAnimations.YAMATO_IDLE).livingMotionModifier(Styles.TWO_HAND, LivingMotions.KNEEL, StarAnimations.YAMATO_IDLE).livingMotionModifier(Styles.TWO_HAND, LivingMotions.WALK, StarAnimations.YAMATO_WALK).livingMotionModifier(Styles.TWO_HAND, LivingMotions.CHASE, StarAnimations.YAMATO_RUN).livingMotionModifier(Styles.TWO_HAND, LivingMotions.RUN, StarAnimations.YAMATO_RUN).livingMotionModifier(Styles.TWO_HAND, LivingMotions.SNEAK, StarAnimations.YAMATO_IDLE).livingMotionModifier(Styles.TWO_HAND, LivingMotions.SWIM, StarAnimations.YAMATO_IDLE).livingMotionModifier(Styles.TWO_HAND, LivingMotions.FLOAT, StarAnimations.YAMATO_IDLE).livingMotionModifier(Styles.TWO_HAND, LivingMotions.FALL, StarAnimations.YAMATO_IDLE).livingMotionModifier(Styles.TWO_HAND, LivingMotions.BLOCK, StarAnimations.YAMATO_GUARD);
+        WeaponCapability.Builder builder = WeaponCapability.builder()
+                .category(StarWeaponCategory.YAMATO)
+                .styleProvider((playerpatch) -> Styles.TWO_HAND)
+                .collider(YamatoColliderPreset.YAMATO)
+                .swingSound(EpicFightSounds.BLADE_HIT)
+                .hitSound(EpicFightSounds.BLADE_HIT)
+                .canBePlacedOffhand(false)
+                .newStyleCombo(Styles.TWO_HAND, StarAnimations.YAMATO_AUTO1, StarAnimations.YAMATO_AUTO2, StarAnimations.YAMATO_AUTO3, StarAnimations.YAMATO_AUTO4, StarAnimations.YAMATO_DASH, StarAnimations.YAMATO_AIRSLASH)
+                .innateSkill(Styles.TWO_HAND, (itemstack) -> StarSkill.YAMATOSKILL)
+                .livingMotionModifier(Styles.TWO_HAND, LivingMotions.IDLE, StarAnimations.YAMATO_IDLE)
+                .livingMotionModifier(Styles.TWO_HAND, LivingMotions.KNEEL, StarAnimations.YAMATO_IDLE)
+                .livingMotionModifier(Styles.TWO_HAND, LivingMotions.WALK, StarAnimations.YAMATO_WALK)
+                .livingMotionModifier(Styles.TWO_HAND, LivingMotions.CHASE, StarAnimations.YAMATO_RUN)
+                .livingMotionModifier(Styles.TWO_HAND, LivingMotions.RUN, StarAnimations.YAMATO_RUN)
+                .livingMotionModifier(Styles.TWO_HAND, LivingMotions.SNEAK, StarAnimations.YAMATO_IDLE)
+                .livingMotionModifier(Styles.TWO_HAND, LivingMotions.SWIM, StarAnimations.YAMATO_IDLE)
+                .livingMotionModifier(Styles.TWO_HAND, LivingMotions.FLOAT, StarAnimations.YAMATO_IDLE)
+                .livingMotionModifier(Styles.TWO_HAND, LivingMotions.FALL, StarAnimations.YAMATO_IDLE)
+                .livingMotionModifier(Styles.TWO_HAND, LivingMotions.BLOCK, StarAnimations.YAMATO_GUARD);
         return builder;
     };
     public static final Function<Item, CapabilityItem.Builder> SLASH = (item) -> {

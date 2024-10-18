@@ -98,5 +98,17 @@
         "stream": true
       }
     ]
+  },
+  "yamato_in": {
+    "sounds": [
+      {
+        "name": "star:yamato_in",
+        "stream": true
+      },
+      {
+        "name": "star:yamato_in2",
+        "stream": true
+      }
+    ]
   }
 }

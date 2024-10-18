@@ -30,7 +30,7 @@ public class Sounds {
     public static final SoundEvent SEKIRO = RegSound("sekiro");
     public static final SoundEvent CHUA = RegSound("chua");
     public static final SoundEvent PENG = RegSound("peng");
-    public static final SoundEvent YAMATO_IN = RegSound("yamato.yamato_in");
+    public static final SoundEvent YAMATO_IN = RegSound("yamato_in");
 
     public Sounds() {
     }
