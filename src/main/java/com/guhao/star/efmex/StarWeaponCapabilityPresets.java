@@ -119,7 +119,7 @@ public class StarWeaponCapabilityPresets {
                 .category(StarWeaponCategory.YAMATO)
                 .styleProvider((playerpatch) -> Styles.TWO_HAND)
                 .collider(YamatoColliderPreset.YAMATO)
-                .swingSound(EpicFightSounds.BLADE_HIT)
+                .swingSound(EpicFightSounds.WHOOSH)
                 .hitSound(EpicFightSounds.BLADE_HIT)
                 .canBePlacedOffhand(false)
                 .newStyleCombo(Styles.TWO_HAND, StarAnimations.YAMATO_AUTO1, StarAnimations.YAMATO_AUTO2, StarAnimations.YAMATO_AUTO3, StarAnimations.YAMATO_AUTO4, StarAnimations.YAMATO_DASH, StarAnimations.YAMATO_AIRSLASH)
