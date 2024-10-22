@@ -109,9 +109,9 @@ public class ExecuteEvent {
                         player.addEffect(new MobEffectInstance((MobEffect)Effect.EXECUTE.get(), 100, 0));
                         ((LivingEntity)ep.getOriginal()).addEffect(new MobEffectInstance((MobEffect)Effect.EXECUTED.get(), 100, 0));
                         pp.playAnimationSynchronized(StarAnimations.EXECUTE_SEKIRO, 0.0F);
-                        if (!level.isClientSide()) {
-                            ep.playAnimationSynchronized(StarAnimations.EXECUTED_SEKIRO, 0.0F, SPPlayAnimation::new);
-                        }
+//                        if (!level.isClientSide()) {
+//                            ep.playAnimationSynchronized(StarAnimations.EXECUTED_SEKIRO, 0.0F, SPPlayAnimation::new);
+//                        }
                         break;
                     }
                 }
